@@ -1,0 +1,13 @@
+App(
+    appid="gpiocc",
+    name="[GPIO] Control Center",
+    apptype=FlipperAppType.PLUGIN,
+    entry_point="gpio_app",
+    cdefines=["GPIOCC"],
+    requires=["gui"],
+    stack_size=1 * 1024,
+    icon="A_GPIO_14",
+    order=11,
+    fap_libs=["assets"],
+    fap_category="GPIO",
+)
