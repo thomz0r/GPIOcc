@@ -8,14 +8,14 @@ typedef struct {
 } GpioItem;
 
 static const GpioItem gpio_item[GPIO_ITEM_COUNT] = {
-    {"1.2: PA7", &gpio_ext_pa7},
-    {"1.3: PA6", &gpio_ext_pa6},
-    {"1.4: PA4", &gpio_ext_pa4},
-    {"1.5: PB3", &gpio_ext_pb3},
-    {"1.6: PB2", &gpio_ext_pb2},
-    {"1.7: PC3", &gpio_ext_pc3},
-    {"2.7: PC1", &gpio_ext_pc1},
-    {"2.8: PC0", &gpio_ext_pc0},
+    {"2: A7", &gpio_ext_pa7},
+    {"3: A6", &gpio_ext_pa6},
+    {"4: A4", &gpio_ext_pa4},
+    {"5: B3", &gpio_ext_pb3},
+    {"6: B2", &gpio_ext_pb2},
+    {"7: C3", &gpio_ext_pc3},
+    {"15: C1", &gpio_ext_pc1},
+    {"16: C0", &gpio_ext_pc0},
 };
 
 void gpio_item_configure_pin(uint8_t index, GpioMode mode) {
