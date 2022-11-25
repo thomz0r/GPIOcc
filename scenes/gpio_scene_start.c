@@ -4,7 +4,6 @@
 #include <dolphin/dolphin.h>
 
 enum GpioItem {
-    // GpioItemUsbUart,
     GpioItemTest,
     GpioItemOtg,
 };
@@ -25,8 +24,7 @@ static void gpio_scene_start_var_list_enter_callback(void* context, uint32_t ind
     GpioApp* app = context;
     if(index == GpioItemTest) {
         view_dispatcher_send_custom_event(app->view_dispatcher, GpioStartEventManualControl);
-        // } else if(index == GpioItemUsbUart) {
-        //    view_dispatcher_send_custom_event(app->view_dispatcher, GpioStartEventUsbUart);
+        
     }
 }
 
@@ -49,8 +47,6 @@ void gpio_scene_start_on_enter(void* context) {
     VariableItem* item;
     variable_item_list_set_enter_callback(
         var_item_list, gpio_scene_start_var_list_enter_callback, app);
-
-    //variable_item_list_add(var_item_list, "USB-UART Bridge", 0, NULL, NULL);
 
     variable_item_list_add(var_item_list, "GPIO Manual Control", 0, NULL, NULL);
 

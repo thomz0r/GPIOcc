@@ -4,7 +4,6 @@
 #include "gpiocc_item.h"
 #include "scenes/gpio_scene.h"
 #include "gpiocc_custom_event.h"
-//#include "usb_uart_bridge.h"
 
 #include <gui/gui.h>
 #include <gui/view_dispatcher.h>
@@ -14,7 +13,6 @@
 #include <gui/modules/variable_item_list.h>
 #include <gui/modules/widget.h>
 #include "views/gpio_test.h"
-//#include "views/gpio_usb_uart.h"
 #include <assets_icons.h>
 
 struct GpioApp {
