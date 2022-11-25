@@ -1,0 +1,41 @@
+###### TODO ###### 
+
+==== bugs =====  
+	*trouver pk pas d'icon 
+
+
+==== projets ==== 
+definir le but  et faire des lots, il faudra probabelement 2 apps : 
+
+* l'apps simmple qui pourrait remplacer l'apps de base
+
+	- creer une section about ou info et preciser les capacitées des gpios :
+		- pin 1 5v , max 2 amps 
+		- pin 9 3.3, max 1 amp 
+		- pin 2/3/4/5/6/7/15/16 an source up to 20ma  ( c'est un warninf go pas tirer trop de jus) 
+	- cree un menu test des inputs 
+
+* l'apps plus complexe: 
+
+	dans les idees pelles meles : 
+		- possibiliter d'activer les GPIO via un chronometre ou a une heure precises 
+		- possibiliter de creer des script en background , on une mini syntax de prog simple  :
+			if bouton 1 = on , then relay 1 off 
+			if time = 13H37 , then relay 1 ON   
+		pas besoin d'aller chercher trop loin , l'implementation peut ce faire apres pour des trucs plus avancer , mais je pense qu'il faudra passer par du script uploader pour les trucs plus complexe 
+			if temp= 24deg then relay on :) 
+			if humidity  =  57 then relay off   etc etc 
+
+autre developpement
+du hardware : 
+
+- cree un pcb de test IO : 
+	idee : 
+	avec des mosfets et / ou relays pour pouvoir isolé et piloter des courrants plus important 
+	des borniers , des interrupteur en poussoir ( possiblement en bornier aussi) 
+
+- une board d'education : 
+	led premonter , bouton premonter , sonde de temperature/hum , detecteur de lumiere , effet hall , a voir ce que le nombre de pin propose 
+	gps , etc . 
+
+	
