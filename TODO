@@ -10,9 +10,9 @@ definir le but  et faire des lots, il faudra probabelement 2 apps :
 * l'apps simmple qui pourrait remplacer l'apps de base
 
 	- creer une section about ou info et preciser les capacitées des gpios :
-		- pin 1 5v , max 2 amps 
+		- pin 1 5v , max 1 amp 
 		- pin 9 3.3, max 1 amp 
-		- pin 2/3/4/5/6/7/15/16 an source up to 20ma  ( c'est un warninf go pas tirer trop de jus) 
+		- pin 2/3/4/5/6/7/15/16 can source up to 20ma  ( c'est un warning go pas tirer trop de jus) 
 	- cree un menu test des inputs 
 
 * l'apps plus complexe: 
